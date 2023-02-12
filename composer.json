@@ -1,0 +1,17 @@
+{
+    "name": "andihoerudin/risetjson2video",
+    "autoload": {
+        "psr-4": {
+            "Andihoerudin\\Risetjson2video\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andi Hoerudin",
+            "email": "andihoerudin24@gmail.com"
+        }
+    ],
+    "require": {
+        "json2video/json2video-php-sdk": "^2.0"
+    }
+}
