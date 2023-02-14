@@ -7,7 +7,7 @@ use JSON2Video\Scene;
 
 // Create and initialize the movie object
 $movie = new Movie;
-$movie->setAPIKey("G9XEDI7D3p7nnatPJUyIJ6HYgAa422J92k6TQfcx");
+$movie->setAPIKey("GuwDKZfL9E7PNSPiDhgLR9Llu8eYcHcr1SkgMedt");
 $movie->resolution = 'full-hd';
 $movie->quality = 'high';
 $movie->draft = false;
@@ -28,9 +28,9 @@ $scene1->addElement([
 		'font-weight' => '900'
 	],
 	'width' => 960,
-	'duration' => 120
 ]);
 $movie->addScene($scene1);
+$scene2 = new Scene; 
 
 // Finally, render the movie
 $movie->render();

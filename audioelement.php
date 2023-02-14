@@ -10,6 +10,7 @@ $movie = new Movie;
 $movie->setAPIKey("FVvHEjQzET45zUMfBaDCb8O2vtTo3SsQ4fY4XLZp");
 $movie->resolution = 'full-hd';
 $movie->quality = 'high';
+$movie->draft=false;
 
 // Create the scenes of the movie
 
