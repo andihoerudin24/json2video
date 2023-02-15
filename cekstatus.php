@@ -6,5 +6,5 @@ use JSON2Video\Movie;
 
 
 $movie = new Movie;
-$movie->setAPIKey("LhYpNpnaEp7mmX514f0sTaavZgWrym8z590SF4rM");
-echo json_encode($movie->getStatus("4fBj4p7vcQwOlbE3"));
+$movie->setAPIKey("rsh7gGGZVo6Sj8cklzrmc348Jn1l1mCa31tmN4Fa");
+echo json_encode($movie->getStatus("CwGP3cE6vdx4V2vI"));

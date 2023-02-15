@@ -7,7 +7,6 @@ use JSON2Video\Scene;
 
 $movie = new Movie;
 $movie->setAPIKey("LhYpNpnaEp7mmX514f0sTaavZgWrym8z590SF4rM");
-$movie->resolution = 'full-hd';
 $movie->quality = 'high';
 $movie->draft = false;
 $scene = new Scene;
