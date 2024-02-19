@@ -5,6 +5,7 @@ use JSON2Video\Movie;
 use JSON2Video\Scene;
 
 // Create and initialize the movie object
+$awal =microtime(true);
 $movie = new Movie;
 $movie->setAPIKey("dw6LVqnwWi2QNotjuRxbB43QtYbhKqSWaXA26gIu");
 $movie->resolution = 'instagram-story';
@@ -17,7 +18,7 @@ $movie->draft = true;
 $scene1 = new Scene;
 $scene1->addElement([
 	'type' => 'video',
-	'src' => 'https://cdnstatic.detik.com/internal/testpage/alhamdulillah%20challenge%2056s_2.mp4?q=12'
+	'src' => 'https://cdnstatic.detik.com/internal/testpage/alhamdulillah%20challenge%2056s_2.mp4?q=13'
 ]);
 
 $scene1->addElement([
@@ -396,13 +397,14 @@ $scene1->addElement([
 
 $movie->addScene($scene1);
 // Finally, render the movie
-$awal =microtime(true);
+
 $res=$movie->render();
 // Wait for the movie to be rendered
-$movie->waitToFinish();
+//$movie->waitToFinish();
 $akhir =microtime(true);
 $lama= $akhir - $awal;
-echo "lama eksekusi".$lama; 
+$time = number_format(($akhir - $awal), 2);
+echo "lama eksekusi ".$time; 
 var_dump($movie->getStatus());
 
 //query string 7 wording sama

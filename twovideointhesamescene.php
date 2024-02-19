@@ -7,9 +7,9 @@ use JSON2Video\Scene;
 
 // Create and initialize the movie object
 $movie = new Movie;
-$movie->setAPIKey("oDw4Zo4WoiaQJc5dHHhfQaQsjpE0butB6uyIJSTc");
+$movie->setAPIKey("WOea4I16pv3dKTn9oYuc34l0KjrwdSfL8GA8OlXR");
 $movie->resolution = 'full-hd';
-$movie->draft=false;
+$movie->draft= true;
 
 // Create the scenes of the movie
 
@@ -20,12 +20,12 @@ $scene1->addElement([
 	'type' => 'video',
 	'src' => 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
 	'duration' => 20,
-	'scale' => [
-		'width' => 1920,
-		'height' => 1080
-	],
-	'x' => 1920,
-	'y' => 1080,
+	// 'scale' => [
+	// 	'width' => 1920,
+	// 	'height' => 1080
+	// ],
+	// 'x' => 1920,
+	// 'y' => 1080,
 ]);
 $scene1->addElement([
 	'type' => 'video',
